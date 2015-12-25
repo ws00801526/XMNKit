@@ -31,9 +31,13 @@
     int count = 1000;
     NSTimeInterval begin, end;
     begin = CACurrentMediaTime();
-    [YYWeiboStatus xmn_modelWithJSON:json];
+    id object;
+    for (int i = 0 ; i < 10 ; i ++) {
+        object = [YYWeiboStatus xmn_modelWithJSON:json];
+    }
     end = CACurrentMediaTime();
-    NSLog(@"this is time :%.2f",end - begin);    
+    NSLog(@"this is time :%.2f",end - begin);
+
     
 }
 

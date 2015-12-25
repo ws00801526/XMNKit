@@ -37,6 +37,7 @@
 		97E9FD1B1C2D4AB3009E21E4 /* weibo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo.json; sourceTree = "<group>"; };
 		97E9FD1D1C2D4ABA009E21E4 /* YYWeiboModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeiboModel.h; sourceTree = "<group>"; };
 		97E9FD1E1C2D4ABA009E21E4 /* YYWeiboModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeiboModel.m; sourceTree = "<group>"; };
+		97E9FD201C2D4D07009E21E4 /* XMNModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMNModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 				97047C391C2D27F100263C6A /* XMNClassInfo.m */,
 				97E9FD181C2D3533009E21E4 /* NSObject+XMNModel.h */,
 				97E9FD191C2D3533009E21E4 /* NSObject+XMNModel.m */,
+				97E9FD201C2D4D07009E21E4 /* XMNModel.h */,
 			);
 			path = XMNModel;
 			sourceTree = "<group>";

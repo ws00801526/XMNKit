@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "NSObject+XMNModel.h"
+#import "XMNModel.h"
 
 @interface ViewController : UIViewController
 
