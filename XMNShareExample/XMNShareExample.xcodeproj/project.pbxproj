@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		972D8DB61C336D2600B38DB8 /* XMNShare+WeChat.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D8DB51C336D2600B38DB8 /* XMNShare+WeChat.m */; };
+		972D8DB91C3379E500B38DB8 /* XMNShare+Supports.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D8DB81C3379E500B38DB8 /* XMNShare+Supports.m */; };
+		972D8DBC1C33811F00B38DB8 /* XMNShare+QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D8DBB1C33811F00B38DB8 /* XMNShare+QQ.m */; };
+		972D8DBF1C338D3500B38DB8 /* XMNShare+WeiBo.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D8DBE1C338D3500B38DB8 /* XMNShare+WeiBo.m */; };
+		973809991C32898F0093B216 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 973809981C32898F0093B216 /* main.m */; };
+		9738099C1C32898F0093B216 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9738099B1C32898F0093B216 /* AppDelegate.m */; };
+		9738099F1C32898F0093B216 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9738099E1C32898F0093B216 /* ViewController.m */; };
+		973809A21C32898F0093B216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973809A01C32898F0093B216 /* Main.storyboard */; };
+		973809A41C32898F0093B216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973809A31C32898F0093B216 /* Assets.xcassets */; };
+		973809A71C3289900093B216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973809A51C32898F0093B216 /* LaunchScreen.storyboard */; };
+		973809B21C328B810093B216 /* XMNShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 973809B11C328B810093B216 /* XMNShare.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		972D8DB41C336D2600B38DB8 /* XMNShare+WeChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMNShare+WeChat.h"; sourceTree = "<group>"; };
+		972D8DB51C336D2600B38DB8 /* XMNShare+WeChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XMNShare+WeChat.m"; sourceTree = "<group>"; };
+		972D8DB71C3379E500B38DB8 /* XMNShare+Supports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMNShare+Supports.h"; sourceTree = "<group>"; };
+		972D8DB81C3379E500B38DB8 /* XMNShare+Supports.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XMNShare+Supports.m"; sourceTree = "<group>"; };
+		972D8DBA1C33811F00B38DB8 /* XMNShare+QQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMNShare+QQ.h"; sourceTree = "<group>"; };
+		972D8DBB1C33811F00B38DB8 /* XMNShare+QQ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XMNShare+QQ.m"; sourceTree = "<group>"; };
+		972D8DBD1C338D3500B38DB8 /* XMNShare+WeiBo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XMNShare+WeiBo.h"; sourceTree = "<group>"; };
+		972D8DBE1C338D3500B38DB8 /* XMNShare+WeiBo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XMNShare+WeiBo.m"; sourceTree = "<group>"; };
+		973809941C32898F0093B216 /* XMNShareExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMNShareExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		973809981C32898F0093B216 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9738099A1C32898F0093B216 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9738099B1C32898F0093B216 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9738099D1C32898F0093B216 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9738099E1C32898F0093B216 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		973809A11C32898F0093B216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		973809A31C32898F0093B216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		973809A61C3289900093B216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		973809A81C3289900093B216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		973809AF1C3289D00093B216 /* XMNShareHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMNShareHeader.h; sourceTree = "<group>"; };
+		973809B01C328B810093B216 /* XMNShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMNShare.h; sourceTree = "<group>"; };
+		973809B11C328B810093B216 /* XMNShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMNShare.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		973809911C32898F0093B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9738098B1C32898F0093B216 = {
+			isa = PBXGroup;
+			children = (
+				973809961C32898F0093B216 /* XMNShareExample */,
+				973809951C32898F0093B216 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		973809951C32898F0093B216 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				973809941C32898F0093B216 /* XMNShareExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		973809961C32898F0093B216 /* XMNShareExample */ = {
+			isa = PBXGroup;
+			children = (
+				973809AE1C3289C20093B216 /* XMNShare */,
+				9738099A1C32898F0093B216 /* AppDelegate.h */,
+				9738099B1C32898F0093B216 /* AppDelegate.m */,
+				9738099D1C32898F0093B216 /* ViewController.h */,
+				9738099E1C32898F0093B216 /* ViewController.m */,
+				973809A01C32898F0093B216 /* Main.storyboard */,
+				973809A31C32898F0093B216 /* Assets.xcassets */,
+				973809A51C32898F0093B216 /* LaunchScreen.storyboard */,
+				973809A81C3289900093B216 /* Info.plist */,
+				973809971C32898F0093B216 /* Supporting Files */,
+			);
+			path = XMNShareExample;
+			sourceTree = "<group>";
+		};
+		973809971C32898F0093B216 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				973809981C32898F0093B216 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		973809AE1C3289C20093B216 /* XMNShare */ = {
+			isa = PBXGroup;
+			children = (
+				973809AF1C3289D00093B216 /* XMNShareHeader.h */,
+				973809B01C328B810093B216 /* XMNShare.h */,
+				973809B11C328B810093B216 /* XMNShare.m */,
+				972D8DB71C3379E500B38DB8 /* XMNShare+Supports.h */,
+				972D8DB81C3379E500B38DB8 /* XMNShare+Supports.m */,
+				972D8DB41C336D2600B38DB8 /* XMNShare+WeChat.h */,
+				972D8DB51C336D2600B38DB8 /* XMNShare+WeChat.m */,
+				972D8DBD1C338D3500B38DB8 /* XMNShare+WeiBo.h */,
+				972D8DBE1C338D3500B38DB8 /* XMNShare+WeiBo.m */,
+				972D8DBA1C33811F00B38DB8 /* XMNShare+QQ.h */,
+				972D8DBB1C33811F00B38DB8 /* XMNShare+QQ.m */,
+			);
+			path = XMNShare;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		973809931C32898F0093B216 /* XMNShareExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973809AB1C3289900093B216 /* Build configuration list for PBXNativeTarget "XMNShareExample" */;
+			buildPhases = (
+				973809901C32898F0093B216 /* Sources */,
+				973809911C32898F0093B216 /* Frameworks */,
+				973809921C32898F0093B216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMNShareExample;
+			productName = XMNShareExample;
+			productReference = 973809941C32898F0093B216 /* XMNShareExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9738098C1C32898F0093B216 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = XMFraker;
+				TargetAttributes = {
+					973809931C32898F0093B216 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 9738098F1C32898F0093B216 /* Build configuration list for PBXProject "XMNShareExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9738098B1C32898F0093B216;
+			productRefGroup = 973809951C32898F0093B216 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				973809931C32898F0093B216 /* XMNShareExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		973809921C32898F0093B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973809A71C3289900093B216 /* LaunchScreen.storyboard in Resources */,
+				973809A41C32898F0093B216 /* Assets.xcassets in Resources */,
+				973809A21C32898F0093B216 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		973809901C32898F0093B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972D8DB61C336D2600B38DB8 /* XMNShare+WeChat.m in Sources */,
+				972D8DBC1C33811F00B38DB8 /* XMNShare+QQ.m in Sources */,
+				972D8DBF1C338D3500B38DB8 /* XMNShare+WeiBo.m in Sources */,
+				9738099F1C32898F0093B216 /* ViewController.m in Sources */,
+				9738099C1C32898F0093B216 /* AppDelegate.m in Sources */,
+				973809991C32898F0093B216 /* main.m in Sources */,
+				973809B21C328B810093B216 /* XMNShare.m in Sources */,
+				972D8DB91C3379E500B38DB8 /* XMNShare+Supports.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		973809A01C32898F0093B216 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				973809A11C32898F0093B216 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		973809A51C32898F0093B216 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				973809A61C3289900093B216 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		973809A91C3289900093B216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		973809AA1C3289900093B216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		973809AC1C3289900093B216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XMNShareExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.XMFraker.XMNShareExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		973809AD1C3289900093B216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XMNShareExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.XMFraker.XMNShareExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9738098F1C32898F0093B216 /* Build configuration list for PBXProject "XMNShareExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973809A91C3289900093B216 /* Debug */,
+				973809AA1C3289900093B216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		973809AB1C3289900093B216 /* Build configuration list for PBXNativeTarget "XMNShareExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				973809AC1C3289900093B216 /* Debug */,
+				973809AD1C3289900093B216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9738098C1C32898F0093B216 /* Project object */;
+}

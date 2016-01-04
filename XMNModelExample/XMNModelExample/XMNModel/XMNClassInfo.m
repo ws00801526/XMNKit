@@ -289,18 +289,6 @@ static OSSpinLock lock;
         _superClassInfo = [self.class classInfoWithClass:_superCls];
     }
     return self;
-    self = [super init];
-    _cls = cls;
-    _superCls = class_getSuperclass(cls);
-    _isMeta = class_isMetaClass(cls);
-    if (!_isMeta) {
-        _metaCls = objc_getMetaClass(class_getName(cls));
-    }
-    _name = NSStringFromClass(cls);
-    [self _update];
-    
-    _superClassInfo = [self.class classInfoWithClass:_superCls];
-    return self;
 }
 
 + (instancetype)classInfoWithClass:(Class)cls {
