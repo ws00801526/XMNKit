@@ -9,9 +9,9 @@
 #import "XMNShare.h"
 
 
-NSString *const kXMNShareAPPIDKey = @"com.XMFraker.shareAPPIDKey";
+NSString *const kXMNThirdAPPIDKey = @"com.XMFraker.shareAPPIDKey";
 NSString *const kXMNShareAPPSecreatKey = @"com.XMFraker.shareAPPSecreatKey";
-NSString *const kXMNShareCallbackKey = @"com.XMFraker.shareCallBackKey";
+NSString *const kXMNThirdCallbackKey = @"com.XMFraker.shareCallBackKey";
 
 @implementation XMNShareContent
 

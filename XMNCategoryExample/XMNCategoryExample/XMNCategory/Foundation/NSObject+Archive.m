@@ -7,6 +7,7 @@
 //
 
 #import "NSObject+Archive.h"
+#import "NSObject+Copying.h"
 
 static NSString *kXMNFileCahceDirectory;
 static dispatch_once_t onceToken;
@@ -16,22 +17,28 @@ static dispatch_once_t onceToken;
 + (BOOL)saveObject:(id)object toFile:(NSString *)fileName {
     dispatch_once(&onceToken, ^{
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-        kXMNFileCahceDirectory = [[paths firstObject] stringByAppendingFormat:@"fileCache"];
+        kXMNFileCahceDirectory = [[paths firstObject] stringByAppendingPathComponent:@"fileCache"];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:kXMNFileCahceDirectory]) {
+            [[NSFileManager defaultManager] createDirectoryAtPath:kXMNFileCahceDirectory withIntermediateDirectories:YES attributes:nil error:nil];
+        }
     });
     NSString *dataPath = [kXMNFileCahceDirectory stringByAppendingPathComponent:fileName];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:dataPath isDirectory:nil]) {
+    if (!object && [[NSFileManager defaultManager] fileExistsAtPath:dataPath isDirectory:nil]) {
         NSError *error;
         [[NSFileManager defaultManager] removeItemAtPath:dataPath error:&error];
         return error ? NO : YES;
     }else {
-        return [NSKeyedArchiver archiveRootObject:self toFile:dataPath];
+        return [NSKeyedArchiver archiveRootObject:object toFile:dataPath];
     }
 }
 
 + (instancetype)objectForFile:(NSString *)fileName {
     dispatch_once(&onceToken, ^{
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-        kXMNFileCahceDirectory = [[paths firstObject] stringByAppendingFormat:@"fileCache"];
+        kXMNFileCahceDirectory = [[paths firstObject] stringByAppendingPathComponent:@"fileCache"];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:kXMNFileCahceDirectory]) {
+            [[NSFileManager defaultManager] createDirectoryAtPath:kXMNFileCahceDirectory withIntermediateDirectories:YES attributes:nil error:nil];
+        }
     });
     NSString *dataPath = [kXMNFileCahceDirectory stringByAppendingPathComponent:fileName];
     if ([[NSFileManager defaultManager] fileExistsAtPath:dataPath isDirectory:nil]) {

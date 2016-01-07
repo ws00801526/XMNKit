@@ -17,7 +17,7 @@
 		93CB3D471C116E2E001C2F65 /* XMNKVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CB3D461C116E2E001C2F65 /* XMNKVOTests.m */; };
 		97D0AD5A1C3A456800B1925A /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D0AD511C3A456800B1925A /* NSData+CommonCrypto.m */; };
 		97D0AD5B1C3A456800B1925A /* NSObject+Archive.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D0AD531C3A456800B1925A /* NSObject+Archive.m */; };
-		97D0AD5C1C3A456800B1925A /* NSObject+ZACopying.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D0AD551C3A456800B1925A /* NSObject+ZACopying.m */; };
+		97D0AD5C1C3A456800B1925A /* NSObject+Copying.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D0AD551C3A456800B1925A /* NSObject+Copying.m */; };
 		97D0AD5D1C3A456800B1925A /* NSString+AESCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D0AD571C3A456800B1925A /* NSString+AESCryptor.m */; };
 		97D0AD5E1C3A456800B1925A /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D0AD591C3A456800B1925A /* NSString+Base64.m */; };
 /* End PBXBuildFile section */
@@ -53,8 +53,8 @@
 		97D0AD511C3A456800B1925A /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 		97D0AD521C3A456800B1925A /* NSObject+Archive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Archive.h"; sourceTree = "<group>"; };
 		97D0AD531C3A456800B1925A /* NSObject+Archive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Archive.m"; sourceTree = "<group>"; };
-		97D0AD541C3A456800B1925A /* NSObject+ZACopying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZACopying.h"; sourceTree = "<group>"; };
-		97D0AD551C3A456800B1925A /* NSObject+ZACopying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZACopying.m"; sourceTree = "<group>"; };
+		97D0AD541C3A456800B1925A /* NSObject+Copying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Copying.h"; sourceTree = "<group>"; };
+		97D0AD551C3A456800B1925A /* NSObject+Copying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Copying.m"; sourceTree = "<group>"; };
 		97D0AD561C3A456800B1925A /* NSString+AESCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCryptor.h"; sourceTree = "<group>"; };
 		97D0AD571C3A456800B1925A /* NSString+AESCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCryptor.m"; sourceTree = "<group>"; };
 		97D0AD581C3A456800B1925A /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 				97D0AD511C3A456800B1925A /* NSData+CommonCrypto.m */,
 				97D0AD521C3A456800B1925A /* NSObject+Archive.h */,
 				97D0AD531C3A456800B1925A /* NSObject+Archive.m */,
-				97D0AD541C3A456800B1925A /* NSObject+ZACopying.h */,
-				97D0AD551C3A456800B1925A /* NSObject+ZACopying.m */,
+				97D0AD541C3A456800B1925A /* NSObject+Copying.h */,
+				97D0AD551C3A456800B1925A /* NSObject+Copying.m */,
 				97D0AD561C3A456800B1925A /* NSString+AESCryptor.h */,
 				97D0AD571C3A456800B1925A /* NSString+AESCryptor.m */,
 				97D0AD581C3A456800B1925A /* NSString+Base64.h */,
@@ -281,7 +281,7 @@
 				97D0AD5A1C3A456800B1925A /* NSData+CommonCrypto.m in Sources */,
 				93CB3D3E1C113C9A001C2F65 /* NSObject+XMNKVO.m in Sources */,
 				97D0AD5B1C3A456800B1925A /* NSObject+Archive.m in Sources */,
-				97D0AD5C1C3A456800B1925A /* NSObject+ZACopying.m in Sources */,
+				97D0AD5C1C3A456800B1925A /* NSObject+Copying.m in Sources */,
 				93CB3D151C113C60001C2F65 /* main.m in Sources */,
 				97D0AD5D1C3A456800B1925A /* NSString+AESCryptor.m in Sources */,
 			);

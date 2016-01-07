@@ -23,7 +23,7 @@
  *  @param appid QQ互联开放平台的APPID
  */
 + (void)connectQQWithAppID:(NSString *)appid {
-    [XMNShare share].appConfiguration[kXMNQQPlatform] = @{kXMNShareAPPIDKey:appid,kXMNShareCallbackKey:[NSString stringWithFormat:@"QQ%02llx",[appid longLongValue]]};
+    [XMNShare share].appConfiguration[kXMNQQPlatform] = @{kXMNThirdAPPIDKey:appid,kXMNThirdCallbackKey:[NSString stringWithFormat:@"QQ%02llx",[appid longLongValue]]};
 }
 
 /**
@@ -61,10 +61,10 @@
  */
 + (void)authQQWithScope:(NSString *)scope successBlock:(void(^)(NSDictionary *responseObject))successBlock failBlock:(void(^)(NSDictionary *responseObject,NSError *error))failBlock {
     if ([self canAuthWithPlatform:kXMNQQPlatform authSuccessBlock:successBlock authFailBlock:failBlock]) {
-        NSDictionary *authData=@{@"app_id" : [self platformConfigurationForPlatform:kXMNQQPlatform][kXMNShareAPPIDKey],
+        NSDictionary *authData=@{@"app_id" : [self platformConfigurationForPlatform:kXMNQQPlatform][kXMNThirdAPPIDKey],
                                  @"app_name" : [self CFBundleDisplayName],
                                  //@"bundleid":[self CFBundleIdentifier],//或者有，或者正确(和后台配置一致)，建议不填写。
-                                 @"client_id" :[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNShareAPPIDKey],
+                                 @"client_id" :[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNThirdAPPIDKey],
                                  @"response_type" : @"token",
                                  @"scope" : scope ? scope : @"",//@"get_user_info,get_simple_userinfo,add_album,add_idol,add_one_blog,add_pic_t,add_share,add_topic,check_page_fans,del_idol,del_t,get_fanslist,get_idollist,get_info,get_other_info,get_repost_list,list_album,upload_pic,get_vip_info,get_vip_rich_info,get_intimate_friends_weibo,match_nick_tips_weibo",
                                  @"sdkp" :@"i",
@@ -74,8 +74,8 @@
                                  @"status_version" : [[UIDevice currentDevice] systemVersion]
                                  };
         
-        [self setGeneralPasteboard:[@"com.tencent.tencent" stringByAppendingString:[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNShareAPPIDKey]] Value:authData encoding:XMNPboardEncodingKeyedArchiver];
-        [self openURLString:[NSString stringWithFormat:@"mqqOpensdkSSoLogin://SSoLogin/tencent%@/com.tencent.tencent%@?generalpastboard=1",[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNShareAPPIDKey],[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNShareAPPIDKey]]];
+        [self setGeneralPasteboard:[@"com.tencent.tencent" stringByAppendingString:[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNThirdAPPIDKey]] Value:authData encoding:XMNPboardEncodingKeyedArchiver];
+        [self openURLString:[NSString stringWithFormat:@"mqqOpensdkSSoLogin://SSoLogin/tencent%@/com.tencent.tencent%@?generalpastboard=1",[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNThirdAPPIDKey],[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNThirdAPPIDKey]]];
     }
 }
 
@@ -96,7 +96,7 @@
         return YES;
     }else if([url.scheme hasPrefix:@"tencent"]){
         //登陆auth
-        NSDictionary *ret=[self generalPasteboardData:[@"com.tencent.tencent" stringByAppendingString:[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNShareAPPIDKey]] encoding:XMNPboardEncodingKeyedArchiver];
+        NSDictionary *ret=[self generalPasteboardData:[@"com.tencent.tencent" stringByAppendingString:[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNThirdAPPIDKey]] encoding:XMNPboardEncodingKeyedArchiver];
         if (ret[@"ret"]&&[ret[@"ret"] intValue]==0) {
             [XMNShare share].authSuccessBlock ? [XMNShare share].authSuccessBlock(ret) : nil;
         }else{
@@ -125,7 +125,7 @@
     [ret appendFormat:@"%ld",shareTo];
     [ret appendString:@"&callback_type=scheme&generalpastboard=1"];
     [ret appendString:@"&callback_name="];
-    [ret appendString:[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNShareCallbackKey]];
+    [ret appendString:[self platformConfigurationForPlatform:kXMNQQPlatform][kXMNThirdCallbackKey]];
     [ret appendString:@"&src_type=app&shareType=0&file_type="];
     switch ([self _qqShareContentTypeWithShareContent:msg]) {
         case XMNShareContentTypeText:

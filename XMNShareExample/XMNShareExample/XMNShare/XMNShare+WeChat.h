@@ -53,4 +53,6 @@ typedef NS_ENUM(NSUInteger, XMNShareWechatType) {
  */
 + (void)authWeChatWithScope:(NSString *)scope successBlock:(void(^)(NSDictionary *responseObject))successBlock failBlock:(void(^)(NSDictionary *responseObject, NSError *error))failBlock;
 
+
+
 @end

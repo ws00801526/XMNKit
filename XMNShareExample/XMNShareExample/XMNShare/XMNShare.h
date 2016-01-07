@@ -9,9 +9,9 @@
 
 #import <UIKit/UIKit.h>
 
-FOUNDATION_EXPORT NSString *const kXMNShareAPPIDKey;
+FOUNDATION_EXPORT NSString *const kXMNThirdAPPIDKey;
 FOUNDATION_EXPORT NSString *const kXMNShareAPPSecreatKey;
-FOUNDATION_EXPORT NSString *const kXMNShareCallbackKey;
+FOUNDATION_EXPORT NSString *const kXMNThirdCallbackKey;
 
 /** 分享内容的类型 */
 typedef NS_ENUM(NSUInteger, XMNShareContentType) {
@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, XMNShareContentType) {
     /** 分享视频内容 */
     XMNShareContentTypeVideo,
     /** 分享app */
-    XMNShareContentTypeeApp,
+    XMNShareContentTypeApp,
     /** fen'x */
     XMNShareContentTypeFile
 };
@@ -62,6 +62,8 @@ typedef enum : NSUInteger {
 /// @name   微信相关配置参数
 /// ========================================
 @property (nonatomic, copy)   NSString *extInfo;
+
+/** Video,Music地址 */
 @property (nonatomic, copy)   NSString *mediaUrl;
 @property (nonatomic, copy)   NSString *fileExt;
 /** 微信分享文件 gif 等 */
@@ -93,8 +95,6 @@ typedef enum : NSUInteger {
 /// ========================================
 
 + (instancetype)share;
-
-
 
 /// ========================================
 /// @name   configure Methods

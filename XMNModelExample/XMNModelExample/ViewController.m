@@ -22,7 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     /// get json data
-    /// get json data
     NSString *path = [[NSBundle mainBundle] pathForResource:@"weibo" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:path];
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];

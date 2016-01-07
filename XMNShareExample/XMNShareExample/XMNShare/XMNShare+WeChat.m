@@ -15,7 +15,7 @@
 @implementation XMNShare (WeChat)
 
 + (void)connectWeChatWithAPPID:(NSString *)appID {
-    [self setPlatformConfiguration:@{kXMNShareAPPIDKey:appID} forPlatform:kXMNWeChatPlatform];
+    [self setPlatformConfiguration:@{kXMNThirdAPPIDKey:appID} forPlatform:kXMNWeChatPlatform];
 }
 
 + (BOOL)isWeChatInstalled {
@@ -30,7 +30,8 @@
 
 + (void)authWeChatWithScope:(NSString *)scope successBlock:(void (^)(NSDictionary *))successBlock failBlock:(void (^)(NSDictionary *, NSError *))failBlock {
     if ([self canAuthWithPlatform:kXMNWeChatPlatform authSuccessBlock:successBlock authFailBlock:failBlock]) {
-        [self openURLString:[NSString stringWithFormat:@"weixin://app/%@/auth/?scope=%@&state=Weixinauth",[self platformConfigurationForPlatform:kXMNWeChatPlatform][kXMNShareAPPIDKey],scope]];
+        [self openURLString:[NSString stringWithFormat:@"weixin://app/%@/auth/?scope=%@&state=Weixinauth",[self platformConfigurationForPlatform:kXMNWeChatPlatform][kXMNThirdAPPIDKey],scope]];
+        
     }
 }
 
@@ -102,9 +103,9 @@
         default:
             break;
     }
-    NSData *output=[NSPropertyListSerialization dataWithPropertyList:@{[self platformConfigurationForPlatform:kXMNWeChatPlatform][kXMNShareAPPIDKey]:dic} format:NSPropertyListBinaryFormat_v1_0 options:0 error:nil];
+    NSData *output=[NSPropertyListSerialization dataWithPropertyList:@{[self platformConfigurationForPlatform:kXMNWeChatPlatform][kXMNThirdAPPIDKey]:dic} format:NSPropertyListBinaryFormat_v1_0 options:0 error:nil];
     [[UIPasteboard generalPasteboard] setData:output forPasteboardType:@"content"];
-    return [NSString stringWithFormat:@"weixin://app/%@/sendreq/?",[self platformConfigurationForPlatform:kXMNWeChatPlatform][kXMNShareAPPIDKey]];
+    return [NSString stringWithFormat:@"weixin://app/%@/sendreq/?",[self platformConfigurationForPlatform:kXMNWeChatPlatform][kXMNThirdAPPIDKey]];
 }
 
 
@@ -127,7 +128,7 @@
 +(BOOL)wx_handleOpenURL{
     NSURL* url = [[XMNShare share] returnURL];
     if ([url.scheme hasPrefix:@"wx"]) {
-        NSDictionary *retDic=[NSPropertyListSerialization propertyListWithData:[[UIPasteboard generalPasteboard] dataForPasteboardType:@"content"]?:[[NSData alloc] init] options:0 format:0 error:nil][[self platformConfigurationForPlatform:kXMNWeChatPlatform][kXMNShareAPPIDKey]];
+        NSDictionary *retDic=[NSPropertyListSerialization propertyListWithData:[[UIPasteboard generalPasteboard] dataForPasteboardType:@"content"]?:[[NSData alloc] init] options:0 format:0 error:nil][[self platformConfigurationForPlatform:kXMNWeChatPlatform][kXMNThirdAPPIDKey]];
         NSLog(@"retDic\n%@",retDic);
         if ([url.absoluteString rangeOfString:@"://oauth"].location != NSNotFound) {
             //login succcess
